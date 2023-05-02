@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="university_registration_freeze_letter" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="a313a5fd-f30c-4698-b1e3-8958e8a3b3a2">
+    <parameter name="name" class="java.lang.String"/>
+    <parameter name="studentID" class="java.lang.String"/>
+    <parameter name="registrationSemester" class="java.lang.String"/>
+    <parameter name="reason" class="java.lang.String"/>
+    <title>
+        <band height="75" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="10" width="535" height="65" forecolor="#050505" uuid="37115462-52a8-46f9-8602-6ae15b9bd7ff"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Calibri" size="16" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Üniversite Kayıt Dondurma Dilekçesi]]></text>
+            </staticText>
+        </band>
+    </title>
+    <detail>
+        <band height="218" splitType="Stretch">
+            <textField>
+                <reportElement x="20" y="10" width="200" height="20" uuid="a5cdce84-b202-4d2b-ae1d-17f80ee8d5b4"/>
+                <textElement>
+                    <font fontName="Calibri" size="11"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Adı Soyadı: "+$P{name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="20" y="30" width="200" height="20" uuid="af7ca002-5084-4cbc-b8cc-9273bb7454b9"/>
+                <textElement>
+                    <font fontName="Calibri" size="11"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Öğrenci Numarası: " + $P{studentID}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="20" y="50" width="200" height="20" uuid="d15ce17b-eefe-4041-a4fe-05c934496619"/>
+                <textElement>
+                    <font fontName="Calibri" size="11"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Kayıt Dönemi: " + $P{registrationSemester}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="20" y="70" width="500" height="30" uuid="27fd934c-8e88-4c74-92f3-4fe29d897d8f"/>
+                <textElement>
+                    <font fontName="Calibri" size="11"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Sayın Yetkili, Ben "+ $P{name} + ", "+$P{studentID}+"numaralı öğrencinizim. Bu yazıyla,  "+$P{registrationSemester}+" döneminde kaydımı dondurmak istediğimi belirtmek istiyorum." ]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="20" y="100" width="500" height="60" uuid="27fd934c-8e88-4c74-92f3-4fe29d897d8f"/>
+                <textElement>
+                    <font fontName="Calibri" size="11"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{reason}+" nedeniyle kaydımın dondurulmasını talep ediyorum. Kaydımın dondurulması için gereken işlemleri tamamlamamı ve kaydımı yeniden aktifleştirmek istediğimde gerekli olan prosedürleri yerine getireceğimi taahhüt ediyorum."]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="20" y="160" width="500" height="29" uuid="54aa7a2a-86ce-41da-aca7-495a68f330b3"/>
+                <textElement>
+                    <font size="11"/>
+                </textElement>
+                <text><![CDATA[Konuyla ilgili gereğinin yapılmasını arz ederim.
+Saygılarımla,]]></text>
+            </staticText>
+        </band>
+    </detail>
+    <summary>
+        <band height="60" splitType="Stretch">
+            <staticText>
+                <reportElement x="20" y="10" width="80" height="20" uuid="a418fbff-4401-470f-a69d-068aabaefbf7"/>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="Calibri"/>
+                </textElement>
+                <text><![CDATA[Tarih:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="100" y="10" width="200" height="20" uuid="f5808950-7820-4f7d-b2e9-64db5459bc74"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font fontName="Calibri"/>
+                </textElement>
+                <textFieldExpression><![CDATA[DATEFORMAT(new Date( ),"dd.MM.yyyy")]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="20" y="30" width="80" height="20" uuid="02aa0243-a34a-49ad-b9dc-4ae31cf395a7"/>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="Calibri"/>
+                </textElement>
+                <text><![CDATA[Öğrenci İmzası:]]></text>
+            </staticText>
+        </band>
+    </summary>
+</jasperReport>

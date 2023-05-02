@@ -1,0 +1,135 @@
+[
+  {
+    "studentID": "123456",
+    "name": "Ahmet Yılmaz",
+    "midtermGrade": "85",
+    "finalGrade": "90",
+    "grade": "AA"
+  },
+  {
+    "studentID": "234567",
+    "name": "Ayşe Demir",
+    "midtermGrade": "80",
+    "finalGrade": "88",
+    "grade": "BA"
+  },
+  {
+    "studentID": "345678",
+    "name": "Mehmet Öztürk",
+    "midtermGrade": "95",
+    "finalGrade": "92",
+    "grade": "AA"
+  },
+  {
+    "studentID": "456789",
+    "name": "Fatma Kaya",
+    "midtermGrade": "70",
+    "finalGrade": "80",
+    "grade": "BB"
+  },
+  {
+    "studentID": "567890",
+    "name": "Ali Aydın",
+    "midtermGrade": "65",
+    "finalGrade": "78",
+    "grade": "CB"
+  },
+  {
+    "studentID": "678901",
+    "name": "Zeynep Yıldız",
+    "midtermGrade": "75",
+    "finalGrade": "85",
+    "grade": "BB"
+  },
+  {
+    "studentID": "789012",
+    "name": "Hakan Aydın",
+    "midtermGrade": "80",
+    "finalGrade": "90",
+    "grade": "BA"
+  },
+  {
+    "studentID": "890123",
+    "name": "Özge Erdoğan",
+    "midtermGrade": "90",
+    "finalGrade": "85",
+    "grade": "BA"
+  },
+  {
+    "studentID": "901234",
+    "name": "Can Özdemir",
+    "midtermGrade": "70",
+    "finalGrade": "80",
+    "grade": "BB"
+  },
+  {
+    "studentID": "012345",
+    "name": "Selin Kılıç",
+    "midtermGrade": "85",
+    "finalGrade": "95",
+    "grade": "AA"
+  },
+  {
+    "studentID": "112233",
+    "name": "Deniz Aydın",
+    "midtermGrade": "80",
+    "finalGrade": "90",
+    "grade": "BA"
+  },
+  {
+    "studentID": "223344",
+    "name": "Burak Şahin",
+    "midtermGrade": "75",
+    "finalGrade": "82",
+    "grade": "BB"
+  },
+  {
+    "studentID": "334455",
+    "name": "İrem Kılıç",
+    "midtermGrade": "95",
+    "finalGrade": "90",
+    "grade": "AA"
+  },
+  {
+    "studentID": "445566",
+    "name": "Emre Kaya",
+    "midtermGrade": "65",
+    "finalGrade": "75",
+    "grade": "CB"
+  },
+  {
+    "studentID": "556677",
+    "name": "Gizem Aksoy",
+    "midtermGrade": "85",
+    "finalGrade": "92",
+    "grade": "AA"
+  },
+  {
+    "studentID": "667788",
+    "name": "Ece Demir",
+    "midtermGrade": "70",
+    "finalGrade": "80",
+    "grade": "BB"
+  },
+  {
+    "studentID": "778899",
+    "name": "Kerem Yıldız",
+    "midtermGrade": "80",
+    "finalGrade": "88",
+    "grade": "BA"
+  },
+  {
+    "studentID": "889900",
+    "name": "Nazlı Şimşek",
+    "midtermGrade": "75",
+    "finalGrade": "85",
+    "grade": "BB"
+  },
+  {
+    "studentID": "990011",
+    "name": "Murat Kılıç",
+    "midtermGrade": "90",
+    "finalGrade": "90",
+    "grade": "AA"
+  }
+]

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_template" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9156b0ce-dd3c-4713-9a9e-853d8bd5297c">
+    <parameter name="lesson" class="java.lang.String"/>
+    <field name="studentID" class="java.lang.String"/>
+    <field name="name" class="java.lang.String"/>
+    <field name="midtermGrade" class="java.lang.String"/>
+    <field name="finalGrade" class="java.lang.String"/>
+    <field name="grade" class="java.lang.String"/>
+    <title>
+        <band height="50" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="10" width="515" height="30" uuid="9a8bfda8-3bc2-4295-b1e4-b43081237a41"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="Arial" size="20" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Öğrenci Not Listesi]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="50" splitType="Stretch">
+            <textField>
+                <reportElement x="428" y="9" width="122" height="31" uuid="30b09f9c-be27-4453-9938-065d962a13aa"/>
+                <box>
+                    <pen lineWidth="1.0" lineStyle="Double" lineColor="#0F0D26"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[DATEFORMAT(new java.util.Date(),"dd/MM/yyyy" )]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="9" width="428" height="31" uuid="6db8f1c1-53c2-4d92-81cf-a936381c610e"/>
+                <box>
+                    <pen lineWidth="1.0" lineStyle="Double" lineColor="#0F0D26"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="11" isBold="true" isItalic="false"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{lesson}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="50">
+            <staticText>
+                <reportElement mode="Opaque" x="0" y="25" width="70" height="15" forecolor="#0A0808" backcolor="#B3A1D6" uuid="32d3f783-4f1d-4b90-a82e-193347642846"/>
+                <textElement textAlignment="Center">
+                    <font size="10"/>
+                </textElement>
+                <text><![CDATA[Öğrenci No]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="70" y="25" width="155" height="15" forecolor="#0A0808" backcolor="#B3A1D6" uuid="5d279f22-5233-4f58-9e21-934332a2d704"/>
+                <textElement textAlignment="Center">
+                    <font size="10"/>
+                </textElement>
+                <text><![CDATA[Ad-Soyad]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="225" y="25" width="104" height="15" forecolor="#0A0808" backcolor="#B3A1D6" uuid="e66ae40d-2868-4d55-aba8-c2560d5daebd"/>
+                <textElement textAlignment="Center">
+                    <font size="10"/>
+                </textElement>
+                <text><![CDATA[Vize Notu]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="429" y="25" width="124" height="15" forecolor="#0A0808" backcolor="#B3A1D6" uuid="3ac9d58f-acb5-4b65-ad89-7bcfca08e74e"/>
+                <textElement textAlignment="Center">
+                    <font size="10"/>
+                </textElement>
+                <text><![CDATA[Harf Notu]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="329" y="25" width="100" height="15" forecolor="#0A0808" backcolor="#B3A1D6" uuid="44d9089c-1e88-43e1-a57b-fa2470e04fed"/>
+                <textElement textAlignment="Center">
+                    <font size="10"/>
+                </textElement>
+                <text><![CDATA[Final Notu]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="23" splitType="Stretch">
+            <textField>
+                <reportElement x="70" y="0" width="154" height="20" uuid="eca24790-bf14-456d-a502-662203dff1c5"/>
+                <box>
+                    <bottomPen lineColor="#0F0D26"/>
+                </box>
+                <textElement textAlignment="Center"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="224" y="0" width="105" height="20" uuid="14509f18-b54a-4175-b5cc-10901a0aedac"/>
+                <box>
+                    <bottomPen lineColor="#0F0D26"/>
+                </box>
+                <textElement textAlignment="Center"/>
+                <textFieldExpression><![CDATA[$F{midtermGrade}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="429" y="0" width="123" height="20" uuid="d1cc0d2c-ee6b-4574-9f2f-9005a8a908b5"/>
+                <box>
+                    <bottomPen lineColor="#0F0D26"/>
+                </box>
+                <textElement textAlignment="Center"/>
+                <textFieldExpression><![CDATA[$F{grade}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="0" y="0" width="70" height="20" uuid="309e7065-5889-46c2-9459-6bc646ccf32b"/>
+                <box>
+                    <bottomPen lineColor="#0F0D26"/>
+                </box>
+                <textElement textAlignment="Center"/>
+                <textFieldExpression><![CDATA[$F{studentID}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="329" y="0" width="100" height="20" uuid="752672b2-efa2-4b9c-8b64-9ade9e8cb5e0"/>
+                <box>
+                    <bottomPen lineColor="#0F0D26"/>
+                </box>
+                <textElement textAlignment="Center"/>
+                <textFieldExpression><![CDATA[$F{finalGrade}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <pageFooter>
+        <band height="50">
+            <line>
+                <reportElement x="0" y="30" width="551" height="1" uuid="20059b14-f4e5-4b51-9047-8534d4c35b0b"/>
+            </line>
+        </band>
+    </pageFooter>
+</jasperReport>

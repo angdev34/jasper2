@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="University Course Schedule" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoPages" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="969a0055-1f43-4c69-8e57-a5ecb5003064">
+    <field name="courseName" class="java.lang.String"/>
+    <field name="instructorName" class="java.lang.String"/>
+    <field name="day" class="java.lang.String"/>
+    <field name="startTime" class="java.lang.String"/>
+    <field name="endTime" class="java.lang.String"/>
+    <title>
+        <band height="50" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="802" height="50" backcolor="#99CCFF" uuid="3211d02d-bc9f-4745-9b0d-48aba5adc710"/>
+                <box>
+                    <pen lineWidth="1.5" lineStyle="Solid" lineColor="#99CCFF"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="24" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Üniversite Ders Programı]]></text>
+            </staticText>
+        </band>
+    </title>
+    <detail>
+        <band height="30" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="0" width="200" height="30" uuid="66d4ad04-554b-4f16-9944-7a49693f486a"/>
+                <box>
+                    <pen lineWidth="1.5" lineStyle="Solid" lineColor="#99CCFF"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{courseName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="200" y="0" width="200" height="30" uuid="ae629f0a-8517-438f-9517-00b647034e23"/>
+                <box>
+                    <pen lineWidth="1.5" lineStyle="Solid" lineColor="#99CCFF"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{instructorName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="400" y="0" width="100" height="30" uuid="6c667ff3-f5e8-4365-b242-7e75b25cc397"/>
+                <box>
+                    <pen lineWidth="1.5" lineStyle="Solid" lineColor="#99CCFF"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="500" y="0" width="150" height="30" uuid="9b836081-137c-43d2-9b83-de692c800278"/>
+                <box>
+                    <pen lineWidth="1.5" lineStyle="Solid" lineColor="#99CCFF"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{startTime}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="650" y="0" width="150" height="30" uuid="18f59882-0715-4cbc-883c-9a9beb8414f6"/>
+                <box>
+                    <pen lineWidth="1.5" lineStyle="Solid" lineColor="#99CCFF"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{endTime}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <pageFooter>
+        <band height="30" splitType="Stretch"/>
+    </pageFooter>
+</jasperReport>

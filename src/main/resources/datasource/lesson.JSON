@@ -1,0 +1,86 @@
+[
+  {
+    "courseName": "Bilgisayar Mühendisliği",
+    "instructorName": "Ahmet Yılmaz",
+    "day": "Pazartesi",
+    "startTime": "09:00",
+    "endTime": "11:00"
+  },
+  {
+    "courseName": "Makine Mühendisliği",
+    "instructorName": "Ali Aksoy",
+    "day": "Salı",
+    "startTime": "10:00",
+    "endTime": "12:00"
+  },
+  {
+    "courseName": "İşletme",
+    "instructorName": "Ayşe Başaran",
+    "day": "Çarşamba",
+    "startTime": "14:00",
+    "endTime": "16:00"
+  },
+  {
+    "courseName": "Eğitim Bilimleri",
+    "instructorName": "Canan Korkmaz",
+    "day": "Perşembe",
+    "startTime": "13:00",
+    "endTime": "15:00"
+  },
+  {
+    "courseName": "Fizik",
+    "instructorName": "Deniz Arslan",
+    "day": "Pazartesi",
+    "startTime": "14:00",
+    "endTime": "16:00"
+  },
+  {
+    "courseName": "Tarih",
+    "instructorName": "Ebru Özdemir",
+    "day": "Salı",
+    "startTime": "09:00",
+    "endTime": "11:00"
+  },
+  {
+    "courseName": "Matematik",
+    "instructorName": "Ferhat Özkan",
+    "day": "Çarşamba",
+    "startTime": "09:00",
+    "endTime": "11:00"
+  },
+  {
+    "courseName": "İktisat",
+    "instructorName": "Gülşah Gül",
+    "day": "Perşembe",
+    "startTime": "10:00",
+    "endTime": "12:00"
+  },
+  {
+    "courseName": "Psikoloji",
+    "instructorName": "Hakan Kaya",
+    "day": "Pazartesi",
+    "startTime": "11:00",
+    "endTime": "13:00"
+  },
+  {
+    "courseName": "Moleküler Biyoloji ve Genetik",
+    "instructorName": "İpek Özdemir",
+    "day": "Salı",
+    "startTime": "11:00",
+    "endTime": "13:00"
+  },
+  {
+    "courseName": "Hukuk",
+    "instructorName": "Jale Yılmaz",
+    "day": "Çarşamba",
+    "startTime": "13:00",
+    "endTime": "15:00"
+  },
+  {
+    "courseName": "Mimarlık",
+    "instructorName": "Kaan Ertürk",
+    "day": "Perşembe",
+    "startTime": "14:00",
+    "endTime": "16:00"
+  }
+]
